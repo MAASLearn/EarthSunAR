@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073993, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 50294742}
   - component: {fileID: 50294741}
   m_Layer: 0
-  m_Name: TargetCube1.Back
+  m_Name: TheCubeWhite.Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,8 +139,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50294739}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: -0.00000004371139}
-  m_LocalPosition: {x: 0, y: -0.1, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 3
@@ -666,10 +666,10 @@ MonoBehaviour:
   m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: TargetCube1
+  mTrackableName: TheCubeWhite
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ObsPlanets.xml
+  mDataSetPath: Vuforia/ObsAR2.xml
 --- !u!4 &488546004
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,7 +1020,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.05
+  near clip plane: 0.01
   far clip plane: 2000
   field of view: 60
   orthographic: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 931182568}
   - component: {fileID: 931182567}
   m_Layer: 0
-  m_Name: TargetCube1.Top
+  m_Name: TheCubeWhite.Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1081,8 +1081,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931182565}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 4
@@ -1158,7 +1158,7 @@ GameObject:
   - component: {fileID: 1007879390}
   - component: {fileID: 1007879389}
   m_Layer: 0
-  m_Name: TargetCube1.Left
+  m_Name: TheCubeWhite.Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1172,8 +1172,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007879387}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 0
@@ -1326,17 +1326,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4802392276893600, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802392276893600, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802392276893600, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4974754201795558, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4974754201795558, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4974754201795558, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1808269971751192, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
       propertyPath: m_IsActive
@@ -1458,7 +1470,7 @@ GameObject:
   - component: {fileID: 1446945806}
   - component: {fileID: 1446945805}
   m_Layer: 0
-  m_Name: TargetCube1.Bottom
+  m_Name: TheCubeWhite.Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1472,8 +1484,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446945803}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 5
@@ -1708,7 +1720,7 @@ GameObject:
   - component: {fileID: 1662257506}
   - component: {fileID: 1662257505}
   m_Layer: 0
-  m_Name: TargetCube1.Right
+  m_Name: TheCubeWhite.Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,8 +1734,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662257503}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 1
@@ -1799,7 +1811,7 @@ GameObject:
   - component: {fileID: 1680867588}
   - component: {fileID: 1680867587}
   m_Layer: 0
-  m_Name: TargetCube1.Front
+  m_Name: TheCubeWhite.Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1813,8 +1825,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680867585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 2
@@ -2240,6 +2252,11 @@ PrefabInstance:
       propertyPath: scaleButtons.Array.data[2]
       value: 
       objectReference: {fileID: 321696254}
+    - target: {fileID: 114261601216884328, guid: ec51dac861a12497b9f5b05315a3ffc6,
+        type: 3}
+      propertyPath: distanceOffset
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec51dac861a12497b9f5b05315a3ffc6, type: 3}
 --- !u!114 &2126108093 stripped
